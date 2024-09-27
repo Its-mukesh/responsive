@@ -1,0 +1,668 @@
+@font-face {
+    font-family: "Synonym";
+    src: url('img/sk-synonym-grotesk-trial.ttf');
+}
+
+@font-face{
+    font-family: "Amulya";
+    src: url('img\Amulya.ttf');
+}
+
+*{
+margin: 0px;
+padding: 0px;
+/* overflow-x: hidden; */
+}
+
+body{
+    height: auto;
+    width: 100%;
+    font-family: "Synonym";
+    
+}
+.container{
+    height: auto;
+    width: 100%;
+}
+
+h1{
+    font-family: "Amulya";
+}
+
+
+h2{
+    font-family: "Space Grotesk";
+    font-size: 4.4rem;
+    font-weight: 500;
+    line-height: 6.2rem;
+    letter-spacing: -5.5%;
+    text-transform: capitalize;
+}
+
+.button{
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 45px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    margin-right: 1.2rem;
+
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 1); */
+    padding: 15px 30px;
+    font-size: 1rem;
+    width: 100%;
+    font-weight: 600;
+    
+
+}
+
+.headers{
+    padding: 2rem 2rem;
+    background: rgba(239, 242, 247, 1);
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    gap: 1.4rem;
+}
+
+.header ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header ul li a{
+    color: rgba(0, 0, 0, 1);
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+ul, a{
+    color: rgba(0, 0, 0, 1);
+}
+
+a:active{
+    color: rgba(0, 0, 0, 1)
+}
+
+a:hover{
+    color: rgb(255, 255, 255,1);
+    text-decoration: none;
+}
+
+
+.sidenav{
+    display: flex;
+    align-items: center;
+}
+
+.sidenav li{
+    list-style: none;
+}
+
+.sidenav a{
+    text-decoration: none;
+    margin-right: 1.4rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.sidenav .button {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 45px;
+    transition: background-color 0.3s;
+}
+
+.sidenav .button:hover {
+    background-color: #e67e22; /* Darker shade on hover */
+}
+
+.checkbtn{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+.had{
+    text-transform: uppercase;
+    font-size: 89.24px;
+    font-family: "Amulya";
+    font-weight: 400;
+    line-height: 6.2rem;
+
+}
+
+.real{
+    text-transform: uppercase;
+    font-size: 89.24px;
+    font-family: "Amulya";
+    font-weight: 500;
+    line-height: 6.2rem;
+}
+
+.span-1{
+    color: rgba(110, 0, 255, 1);
+    font-size: 89.24px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.leading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-cont{
+    background-image: url('img/image\ 16.png');
+    height: 61vw;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.mint{
+    position: absolute;
+}
+
+.mint .roll{
+    position: absolute;
+    right: 12rem;
+    top: 10rem;
+
+}
+
+.mint .bell{
+    position: absolute;
+    top: 18rem;
+    left: 8rem;
+}
+
+.down{
+    border: 2px solid rgba(169, 167, 167, 1);
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.down i{
+padding: 0rem 1rem;
+    
+}
+
+.down p{
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    display: inline;
+    align-items: center;
+
+}
+
+.content{
+    text-transform: capitalize;
+    display: inline;
+   display: flex;
+   justify-items:center;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 5rem;
+
+}
+h5{
+    font-family: "space Grotesk";
+    letter-spacing: 0.2rem;
+    display: inline;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    gap: 1rem;
+    text-transform: uppercase;
+    
+}
+.buy{
+    color:rgba(1, 1, 1, 1);
+    font-family: "space Grotesk";
+    font-size: 4.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: -5.5%;
+    
+
+
+}
+
+.in{
+    /* display: inline; */
+    display: flex;
+}
+
+
+.span-2{
+    color: rgba(110, 0, 255, 1);
+    font-size: 4.4rem;
+    font-weight: 500;
+    font-family: "space Grotesk";
+    letter-spacing: -5.5%;
+}
+
+.Synonym{
+    font-family: "Synonym";
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    /* padding-left: 2rem; */
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bg-light{
+    padding-top: 130px;
+    padding-bottom: 123px;
+     background: rgba(239, 242, 247, 0.6);
+    
+}
+.desc{
+    margin-top: 2rem;
+    line-height: 3rem;
+}
+
+.img-flex{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+h3{
+    font-family: "inter";
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:  rgba(1, 1, 1, 1);
+}
+
+p{
+    font-family: "synonym";
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    opacity: 0.7;
+}
+
+h6{
+    font-family: "space Grotesk";
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+h6, i{
+    display: flex;
+    align-items: center;
+}
+
+.container-3{
+    margin-top: 6rem;
+    /* padding-bottom: 1rem; */
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+    
+}
+
+#border{
+    padding-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 1);
+}
+
+.container-3 .flow{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 0.9rem;
+    /* padding-bottom: 7rem; */
+    
+}
+
+.container-3 .img-i{
+    padding-top: 1.5rem;
+}
+
+.container-3 .gapy{
+    padding-top: 1.5rem;
+    /* padding-left: 5rem; */
+    padding-bottom: 1.5rem;
+}
+
+
+
+.container-4{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    
+}
+
+.img-price{
+    height: auto;
+    width: 100%;
+}
+
+
+
+.price{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sold{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+
+.container-5 .tell{
+    font-weight: 500;
+}
+
+.women-1{
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: rgba(110, 0, 255, 1);
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.man-1{
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color:rgba(110, 0, 255, 0.1) ;
+    padding: 1rem;
+    border-radius: 3rem;
+
+
+}
+
+
+
+
+.fa-brands{
+    padding: 0.5rem;
+}
+
+.container-5{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(239, 242, 247, 0.6);
+    /* margin: 2rem 0rem; */
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.best{
+    padding: 4rem;
+}
+
+
+
+ .container-5 .first{
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
+    height: 392px;
+    width: 410px;
+    margin: 1rem;
+    padding: 1rem;
+ }
+
+ .first .circle{
+    float: right;
+ }
+
+
+
+ .container-5 .second{
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
+    height: 392px;
+    width: 410px;
+    margin: 1rem;
+    padding: 1rem;
+
+
+ }
+
+ .parent-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .second .cube{
+    float: right;
+ }
+
+ .parent::after{
+    content: "";
+    display: block;
+    clear: both;
+ }
+ .footer{
+    background-color: rgba(0, 0, 0, 1);
+    padding: 1rem;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    width: 100%;
+
+}
+.table{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(211, 211, 211, 1);
+    padding-bottom: 2rem;
+}
+
+
+ #bolder{
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.4rem;
+    font-family: "Synonym";
+}
+.table li{
+    list-style: none;
+    padding: 0.5rem;
+    opacity: 1;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.table li a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.table-m{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+    float: right;
+}
+
+
+/* .copy{
+    padding-top: 1rem;
+    display: inline;
+    display: flex;
+    justify-content: space-around;
+    
+} */
+/* .end{
+    display: flex;
+    justify-content: flex-end;
+    
+
+} */
+.copy{
+
+    padding-top: 1rem;
+    width: 100%;
+
+}
+
+.copy .pull{
+    float: right;
+}
+
+/* .copy::after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+
+.footer {
+    background-color: #0a0a0b; /* Adjust as needed */
+    padding: 20px;
+    text-align: center;
+}
+
+.space-around {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+}
+
+.footer-logo {
+    flex: 1 1 250px; /* Adjust for responsiveness */
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex: 2 1 400px; /* Adjust for responsiveness */
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.footer-links div {
+    flex: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .space-around {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
